@@ -1,0 +1,53 @@
+{
+  "name": "typed-rest-api",
+  "version": "1.0.0",
+  "description": "Integration: TS + Node.js Project  Mini Project: “Typed REST API”  Use Express + TypeScript.  Add type-safe route handlers and DTOs (Data Transfer Objects). Goal: Apply everything to a backend codebase.",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc -p .",
+    "start": "node dist/server.js",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "test": "jest --coverage",
+    "coverage": "jest --coverage",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "*",
+    "express": "*",
+    "morgan": "*",
+    "zod": "*"
+  },
+  "devDependencies": {
+    "@types/express": "*",
+    "@types/jest": "^30.0.0",
+    "@types/morgan": "*",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "jest": "^30.2.0",
+    "prettier": "*",
+    "supertest": "*",
+    "ts-jest": "^29.4.5",
+    "ts-node-dev": "*",
+    "typescript": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckyhegde6/ts107.git"
+  },
+  "keywords": [],
+  "author": "luckyhegde6",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/luckyhegde6/ts107/issues"
+  },
+  "homepage": "https://github.com/luckyhegde6/ts107#readme"
+}
