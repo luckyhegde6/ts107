@@ -3,7 +3,7 @@ import { ApiError } from '../errors/ApiError';
 import { logger } from '../utils/logger';
 
 
-export function errorHandler(err: unknown, req: Request, res: Response, _next: NextFunction) {
+export function errorHandler(err: unknown, req: Request, res: Response) {
 if (err instanceof ApiError) {
 logger.error(err.status, err.message, { path: req.path });
 res.status(err.status).json({ message: err.message });

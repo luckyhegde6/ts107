@@ -12,7 +12,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc -p .",
     "start": "node dist/server.js",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "test": "jest --coverage",
     "coverage": "jest --coverage",
     "prettier": "prettier --write ."
@@ -24,19 +24,23 @@
     "zod": "*"
   },
   "devDependencies": {
+    "@eslint/js": "^9.38.0",
     "@types/express": "*",
     "@types/jest": "^30.0.0",
     "@types/morgan": "*",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
-    "eslint": "*",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
     "jest": "^30.2.0",
-    "prettier": "*",
+    "prettier": "^3.6.2",
     "supertest": "*",
     "ts-jest": "^29.4.5",
     "ts-node-dev": "*",
-    "typescript": "*"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.1"
   },
   "repository": {
     "type": "git",

@@ -4,7 +4,7 @@ import { CreateUserDTO, UpdateUserDTO } from '../dtos/user.dto';
 
 
 export function makeUserController(service: UserService) {
-const create: RequestHandler<{}, unknown, CreateUserDTO> = async (req, res, next) => {
+const create: RequestHandler<Record<string, string>, any, CreateUserDTO> = async (req, res, next) => {
 try {
 const user = await service.createUser(req.body);
 res.status(201).json(user);
@@ -14,7 +14,7 @@ next(err);
 };
 
 
-const getOne: RequestHandler<{ id: string }> = async (req, res, next) => {
+const getOne: RequestHandler<{ id: string }, any> = async (req, res, next) => {
 try {
 const user = await service.getUser(req.params.id);
 res.json(user);
@@ -24,7 +24,7 @@ next(err);
 };
 
 
-const list: RequestHandler = async (req, res, next) => {
+const list: RequestHandler<Record<string, string>, any> = async (req, res, next) => {
 try {
 const users = await service.listUsers();
 res.json(users);
@@ -34,7 +34,7 @@ next(err);
 };
 
 
-const update: RequestHandler<{ id: string }, unknown, UpdateUserDTO> = async (req, res, next) => {
+const update: RequestHandler<{ id: string }, any, UpdateUserDTO> = async (req, res, next) => {
 try {
 const updated = await service.updateUser(req.params.id, req.body);
 res.json(updated);
@@ -44,7 +44,7 @@ next(err);
 };
 
 
-const remove: RequestHandler<{ id: string }> = async (req, res, next) => {
+const remove: RequestHandler<{ id: string }, any> = async (req, res, next) => {
 try {
 await service.deleteUser(req.params.id);
 res.status(204).end();
