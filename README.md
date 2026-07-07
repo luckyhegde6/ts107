@@ -155,13 +155,11 @@ Middleware automatically validates and rejects invalid requests before reaching 
 
 Check the /docs folder for:
 
-[docs/LEARNING.md](docs/LEARNING.md) — TypeScript + Express concepts
-
-[docs/typed-express.md](docs/typed-express.md) — Middleware & DTOs
-[docs/typed-express.md](docs/typed-express.md) — Typed handlers and DTOs
-
-[docs/error-handling.md](docs/error-handling.md) — Centralized error patterns
-
-[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — HLD & LLD diagrams
-
-[docs/INTERVIEW_QUESTIONS.md](docs/INTERVIEW_QUESTIONS.md) — Detailed senior-level backend questions
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — HLD & LLD diagrams
+- [LEARNING.md](docs/LEARNING.md) — TypeScript + Express concepts
+- [typed-express.md](docs/typed-express.md) — Typed handlers and DTOs
+- [dtos.md](docs/dtos.md) — DTO validation patterns
+- [error-handling.md](docs/error-handling.md) — Centralized error patterns
+- [INTERVIEW_QUESTIONS.md](docs/INTERVIEW_QUESTIONS.md) — Senior-level interview prep
+- [NEETCODE.md](docs/NEETCODE.md) — Sequence diagram, edge cases, complexity, patterns
+- [DESIGN_PATTERNS.md](docs/DESIGN_PATTERNS.md) — Clean architecture & design patterns
